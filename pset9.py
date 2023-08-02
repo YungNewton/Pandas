@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 # Step 1: Load the data and show the shape and first few rows
-df = pd.read_csv('your_data_file.csv')  # replace with your csv file path
+df = pd.read_csv('stockdailyhlnews.csv')  # replace with your csv file path
 print("Data shape:", df.shape)  # should print (1989, 6)
 print("First few rows of data:")
 print(df.head())
