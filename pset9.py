@@ -42,7 +42,7 @@ df_dummy = pd.get_dummies(df, columns=['weekday', 'president'])
 # Print the new dataframe with the dummy variables.
 print("Dataframe after converting 'Weekday' and 'President' to dummy variables:")
 print(df_dummy.head())
-
+print(df_dummy)
 # Step 3: Conduct a linear regression to investigate the relationship between 'sscore', 'sp500', and 'ibm'.
 result = ols(formula='ibm ~ sscore + sp500', data=df_dummy).fit()
 print(result.summary())
